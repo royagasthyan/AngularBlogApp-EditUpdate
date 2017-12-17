@@ -1,0 +1,33 @@
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Update Post</h5>
+                <button type="button" #closeBtn class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+
+
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Title</label>
+                        <input name="title" type="text" [(ngModel)]="post.title" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter title">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Description</label>
+                        <textarea name="description" [(ngModel)]="post.description" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        </textarea>
+                    </div>
+
+                   
+
+                    <button (click)="addPost()" type="button" class="btn btn-primary">Add</button>
+                </form>
+
+
+            </div>
+        </div>
+    </div>
+</div>
